@@ -3027,7 +3027,7 @@ namespace CounterSpells {
             if (Drawing.Direct3DDevice9 == null || Drawing.Direct3DDevice9.IsDisposed || !inGame || !Menu.Item("key").GetValue<KeyBind>().Active)
                 return;
 
-            text.DrawText(null, "Dodge enabled", Menu.Item("x").GetValue<Slider>().Value,
+            text.DrawText(null, "", Menu.Item("x").GetValue<Slider>().Value,
                 Menu.Item("y").GetValue<Slider>().Value, Color.DarkOrange);
         }
 
